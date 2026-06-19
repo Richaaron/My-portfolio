@@ -554,7 +554,7 @@ img { display: block; max-width: 100%; }
    ============================================ */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   border-top: 1px solid var(--border);
 }
 .skill-col {
