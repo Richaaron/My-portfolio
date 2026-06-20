@@ -69,14 +69,20 @@ img { display: block; max-width: 100%; }
   border-bottom: 1px solid var(--border);
 }
 .topbar-logo {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 0.95rem;
-  letter-spacing: 0.05em;
-  color: var(--blue);
   justify-self: start;
+  display: flex;
+  align-items: center;
 }
-.topbar-logo:hover { color: var(--peach); }
+.nav-logo-img {
+  height: 38px;
+  width: auto;
+  display: block;
+  filter: drop-shadow(0 0 6px rgba(0, 212, 255, 0.5));
+  transition: filter 0.3s ease;
+}
+.topbar-logo:hover .nav-logo-img {
+  filter: drop-shadow(0 0 12px rgba(0, 212, 255, 0.9));
+}
 
 .topbar-nav {
   display: flex;
